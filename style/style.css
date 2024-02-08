@@ -1,0 +1,42 @@
+body {
+
+
+}
+
+h1 {
+  background-color: antiquewhite;
+  text-align: left;
+  padding: 20px;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  text-align: center;
+  background-color: pink;
+
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 20px;
+  margin: 15px 0;
+}
+
+footer {
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 20px;
+}
+
