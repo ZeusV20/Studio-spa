@@ -9,8 +9,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src=""></script>
-    <script src=""></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
   </head>
   <body>
     <header>
@@ -48,6 +48,31 @@
       </nav>
     </header>
 
+    <gmp-map center="18.252470016479492,-93.22504425048828" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="18.252470016479492,-93.22504425048828" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+
+    
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+      <div>
+        <h3>Email</h3>
+        <p>info@tunegocio.com</p>
+      </div>
+      <div>
+        <h3>Teléfono</h3>
+        <p>+123 456 7890</p>
+      </div>
+      <form action="/enviar-mensaje" method="POST">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Email" required>
+        <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </section>
+
     <footer class="footer">
       <div class="footer-section">
          <h3>Horarios</h3>
@@ -65,4 +90,6 @@
            </div>
          </footer>
   </body>
+
+  <script async defer src="AIzaSyDH62xfvXSSphRJT0CyE5qrglO-ITeh75U"></script>
 </html>

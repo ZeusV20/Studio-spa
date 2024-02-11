@@ -29,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: blueviolet;
+  background-color: #fff;
   text-align: justify;
   padding: 40px;
 }
@@ -118,9 +118,121 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, alpha);
 }
 
-section {
+.servicios {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.titulo-servicios {
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicio {
+  flex-basis: 30%; /* Ajusta este valor según el número de servicios que quieras mostrar por fila */
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 20px;
-  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.imagen-servicio {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.productos {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.titulo-productos {
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.producto {
+  flex-basis: 30%; /* Ajusta este valor según el número de servicios que quieras mostrar por fila */
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.imagen-producto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contacto {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 40px; /* Espaciado interior */
+  margin: 20px 0; /* Margen exterior */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+}
+
+.contacto h2 {
+  color: #333; /* Color del texto para el título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+.contacto h3 {
+  margin-top: 20px; /* Espacio arriba de cada subsección */
+  color: #666; /* Color del texto para subtítulos */
+}
+
+.contacto p {
+  color: #555; /* Color del texto para párrafos */
+}
+
+.contacto form {
+  margin-top: 20px; /* Espacio arriba del formulario */
+}
+
+.contacto input[type="text"],
+.contacto input[type="email"],
+.contacto textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interior */
+  margin-bottom: 10px; /* Espacio debajo de cada campo */
+  border: 1px solid #ddd; /* Borde sutil */
+  border-radius: 4px; /* Bordes redondeados */
+}
+
+.contacto button {
+  background-color: #0056b3; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interior */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor en forma de mano */
+}
+
+.contacto button:hover {
+  background-color: #004494; /* Color de fondo al pasar el mouse */
+}
+
+#map {
+  width: 100%; /* Esto hace que el mapa ocupe el ancho completo de su contenedor */
+  height: 400px; /* Ajusta la altura según tus necesidades */
+  margin: auto; /* Centra el mapa si tiene un ancho máximo o está dentro de un contenedor más grande */
 }
 
 .footer {
