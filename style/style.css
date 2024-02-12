@@ -33,15 +33,21 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #000;
+  background: white;
+  color: #000000;;
   text-align: justify;
   padding: 40px;
-  color: white;
+  color: rgb(0, 0, 0);
+
 }
 
 .text-one {
   flex: 1; 
-  padding-right: 20px; 
+  padding-right: 20px;
+}
+
+.text-one h2 {
+  text-align: center;
 }
 
 .imagen {
@@ -55,28 +61,23 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
   border-color: #9b7806;
 }
 
-.business-valors {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #000;
-  color: white;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
+.title_01 {
+  text-align: center;
 }
 
 .seccion {
-  border: 1px solid #9b7806;
+  border: px solid #9b7806;
   padding: 20px;
-  width: 80%;
-  text-align: center;
+  width: 100%;
+  height: 300px;
+  text-align: justify;
   border-radius: 10px;
 }
 
 .seccion h2 {
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #000000;
+  text-align: center;
 }
 
 .servicios {
@@ -194,9 +195,9 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
   display: flex;
   justify-content: center; 
   align-items: start; 
-  padding: 20px;
+  padding: 100px;
   gap: 200px;
-  background-color: #000;
+  background-color: white;
 }
 
 .facebook-plugin, .instagram-plugin {
