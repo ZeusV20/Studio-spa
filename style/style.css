@@ -7,18 +7,22 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
 }
 
 .navbar-custom {
-  background-color: #000 !important; 
+  background-color: #000; /* Fondo negro para la barra de navegación */
 }
 
+
 .navbar-custom .navbar-brand, .navbar-custom .nav-link {
-  color: #ffffff !important; 
-  gap: 100px;
-  margin: 0 50px;
+  color: #ffffff; /* Texto blanco para la marca y enlaces */
+}
+
+.navbar-custom .navbar-nav {
+  justify-content: space-around; /* Espacio distribuido uniformemente alrededor de cada enlace */
 }
 
 .navbar-custom .nav-link:hover {
-  color: #grey !important;
+  color: #9b7806; /* Color gris al pasar el mouse */
 }
+
 
 .social-icons {
   display: flex;
@@ -193,15 +197,16 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
 
 .contenedor-redes {
   display: flex;
-  justify-content: center; 
-  align-items: start; 
-  padding: 100px;
-  gap: 200px;
-  background-color: white;
+  justify-content: center;
+  gap: 20px; /* Espaciado entre plugins */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en filas según el espacio disponible */
+  padding: 20px; /* Espaciado alrededor del contenedor para una mejor visualización */
 }
 
 .facebook-plugin, .instagram-plugin {
-  width: 340px; 
+  max-width: 340px; /* Ancho máximo para los plugins */
+  width: 100%; /* Hace que los plugins sean fluidos, ajustándose al contenedor */
+  min-height: 500px; /* Altura mínima para mantener una visualización coherente */
 }
 
 #map {
@@ -238,41 +243,51 @@ h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
   vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-  .servicio, .producto, .certification {
-    flex-basis: 45%; /* Ajusta para mostrar 2 elementos por fila */
-  }
-
-  .facebook-plugin, .instagram-plugin {
-    width: 100%; /* Ajusta el ancho para ocupar el contenedor */
-  }
-}
-
-/* Teléfonos móviles y dispositivos con un ancho de hasta 480px */
 @media (max-width: 480px) {
+  /* Ajustes para teléfonos móviles */
   .navbar {
     flex-direction: column;
-    align-items: flex-start; /* Alinea elementos de la barra de navegación verticalmente */
   }
 
-  .servicio, .producto, .certification, .facebook-plugin, .instagram-plugin {
-    flex-basis: 100%; /* Cada elemento ocupa el ancho completo */
+  .navbar-custom .nav-link {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    
   }
 
-  .social-icons a, .footer-section {
-    margin: 10px 0; /* Aumenta el margen para una mejor visualización */
+  .social-icons a {
+    margin: 5px; /* Reduce el margen para los iconos sociales */
+    font-size: 1.5rem; /* Aumenta el tamaño de los íconos sociales */
   }
 
-  .contenedor-redes {
-    flex-direction: column; /* Apila el contenido de las redes sociales verticalmente */
-    gap: 20px;
+  .inf-business, .contenedor-servicios, .contenedor-productos {
+    padding: 20px; /* Reduce el padding para usar mejor el espacio */
   }
 
-  .inf-business, .business-valors, .certifications-business, .contenedor-servicios, .contenedor-productos {
-    flex-direction: column; /* Apila los elementos verticalmente */
+  /* Asegurarse de que todo el texto es legible sin necesidad de zoom */
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.2rem; /* Reduce el tamaño de las fuentes para los títulos */
   }
 
-  .text-one, .imagen, .imagen img, .imagen-servicio, .imagen-producto {
-    width: 100%; /* Asegura que las imágenes y los textos ocupen todo el ancho disponible */
+  .servicio, .producto {
+    padding: 15px; /* Reduce el padding para estos elementos */
   }
+
+  .facebook-plugin iframe,  {
+    width: 100%; /* Ajusta el ancho del iframe al 100% del contenedor */
+    min-height: 300px; /* Opcional: Ajusta la altura para móviles */
+  }
+
+  .instagram-plugin iframe {
+    width: 0px;
+
+  }
+
+
+
+
+
+
+
 }
