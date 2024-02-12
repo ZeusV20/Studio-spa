@@ -1,19 +1,23 @@
-body {
-  padding-top: 0px;
+body, .navbar .nav-link {
+  font-family: 'Lora', sans-serif;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #36e97d;
-  color: #2e1313;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+h1, h2, h3, h4, h5, h6, .navbar-brand, .footer-section h3 {
+  font-family: 'Lora', sans-serif;
+}
+
+.navbar-custom {
+  background-color: #000 !important; 
+}
+
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+  color: #ffffff !important; 
+  gap: 100px;
+  margin: 0 50px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #grey !important;
 }
 
 .social-icons {
@@ -29,93 +33,50 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: #000;
   text-align: justify;
   padding: 40px;
+  color: white;
 }
 
 .text-one {
-  flex: 1; /* Ocupa la mitad del espacio disponible */
-  padding-right: 20px; /* Espacio entre el texto y la imagen */
+  flex: 1; 
+  padding-right: 20px; 
 }
 
 .imagen {
-  flex: 1; /* Ocupa la mitad del espacio disponible */
+  flex: 1;
 }
 
 .imagen img {
-  width: 100%; /* Ajusta la imagen al contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%; 
+  height: auto; 
+  border-radius: 20px;
+  border-color: #9b7806;
 }
 
 .business-valors {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: #000;
+  color: white;
   align-items: center;
   gap: 20px;
   padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-  box-shadow: 0 4px 8px;
 }
 
 .seccion {
-  border: 1px solid #ccc;
+  border: 1px solid #9b7806;
   padding: 20px;
   width: 80%;
   text-align: center;
+  border-radius: 10px;
 }
 
 .seccion h2 {
   margin-bottom: 15px;
-}
-
-.certifications-business {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #ccc;
-  padding: 20px;
-  margin: 20px auto;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  text-align: center;
-}
-
-.titulo-certificaciones {
-  font-size: 24px;
-  margin-bottom: 20px;
-  color: #333;
-  display: inline-block; 
-  width: 100%;
-  font-weight: bold;
-}
-
-.certification {
-  border: 1px solid #ccc;
-  padding: 20px;
-  flex: 1;
-  text-align: center;
-  margin: 10px;
-  min-width: 400px;
-  transition: 0.3s ease;
-}
-
-.certification:hover {
-  transform: scale(1.05);
-}
-
-.certification img {
-  margin-bottom: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, alpha);
-  border-radius: 5px;
-  transition: box-shadow 0.3s ease;
-}
-
-.certification img:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, alpha);
+  color: #ffffff;
 }
 
 .servicios {
@@ -135,7 +96,7 @@ body {
 }
 
 .servicio {
-  flex-basis: 30%; /* Ajusta este valor según el número de servicios que quieras mostrar por fila */
+  flex-basis: 30%; 
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 20px;
@@ -166,7 +127,7 @@ body {
 }
 
 .producto {
-  flex-basis: 30%; /* Ajusta este valor según el número de servicios que quieras mostrar por fila */
+  flex-basis: 30%; 
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   padding: 20px;
@@ -181,58 +142,71 @@ body {
 }
 
 .contacto {
-  background-color: #f9f9f9; /* Color de fondo suave */
-  padding: 40px; /* Espaciado interior */
-  margin: 20px 0; /* Margen exterior */
-  border-radius: 8px; /* Bordes redondeados */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra sutil */
+  background-color: #f9f9f9; 
+  padding: 40px; 
+  margin: 20px 0; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
 }
 
 .contacto h2 {
-  color: #333; /* Color del texto para el título */
-  margin-bottom: 20px; /* Espacio debajo del título */
+  color: #333; 
+  margin-bottom: 20px; 
 }
 
 .contacto h3 {
-  margin-top: 20px; /* Espacio arriba de cada subsección */
-  color: #666; /* Color del texto para subtítulos */
+  margin-top: 20px; 
+  color: #666; 
 }
 
 .contacto p {
-  color: #555; /* Color del texto para párrafos */
+  color: #555; 
 }
 
 .contacto form {
-  margin-top: 20px; /* Espacio arriba del formulario */
+  margin-top: 20px; 
 }
 
 .contacto input[type="text"],
 .contacto input[type="email"],
 .contacto textarea {
-  width: 100%; /* Ancho completo */
-  padding: 10px; /* Espaciado interior */
-  margin-bottom: 10px; /* Espacio debajo de cada campo */
-  border: 1px solid #ddd; /* Borde sutil */
-  border-radius: 4px; /* Bordes redondeados */
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
 }
 
 .contacto button {
-  background-color: #0056b3; /* Color de fondo del botón */
-  color: white; /* Color del texto */
-  padding: 10px 20px; /* Espaciado interior */
-  border: none; /* Sin borde */
-  border-radius: 4px; /* Bordes redondeados */
-  cursor: pointer; /* Cursor en forma de mano */
+  background-color: #0056b3;
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
 }
 
 .contacto button:hover {
-  background-color: #004494; /* Color de fondo al pasar el mouse */
+  background-color: #004494; 
+}
+
+.contenedor-redes {
+  display: flex;
+  justify-content: center; 
+  align-items: start; 
+  padding: 20px;
+  gap: 200px;
+  background-color: #000;
+}
+
+.facebook-plugin, .instagram-plugin {
+  width: 340px; 
 }
 
 #map {
-  width: 100%; /* Esto hace que el mapa ocupe el ancho completo de su contenedor */
-  height: 400px; /* Ajusta la altura según tus necesidades */
-  margin: auto; /* Centra el mapa si tiene un ancho máximo o está dentro de un contenedor más grande */
+  width: 100%; 
+  height: 400px; 
+  margin: auto; 
 }
 
 .footer {
@@ -263,3 +237,41 @@ body {
   vertical-align: middle;
 }
 
+@media (max-width: 768px) {
+  .servicio, .producto, .certification {
+    flex-basis: 45%; /* Ajusta para mostrar 2 elementos por fila */
+  }
+
+  .facebook-plugin, .instagram-plugin {
+    width: 100%; /* Ajusta el ancho para ocupar el contenedor */
+  }
+}
+
+/* Teléfonos móviles y dispositivos con un ancho de hasta 480px */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; /* Alinea elementos de la barra de navegación verticalmente */
+  }
+
+  .servicio, .producto, .certification, .facebook-plugin, .instagram-plugin {
+    flex-basis: 100%; /* Cada elemento ocupa el ancho completo */
+  }
+
+  .social-icons a, .footer-section {
+    margin: 10px 0; /* Aumenta el margen para una mejor visualización */
+  }
+
+  .contenedor-redes {
+    flex-direction: column; /* Apila el contenido de las redes sociales verticalmente */
+    gap: 20px;
+  }
+
+  .inf-business, .business-valors, .certifications-business, .contenedor-servicios, .contenedor-productos {
+    flex-direction: column; /* Apila los elementos verticalmente */
+  }
+
+  .text-one, .imagen, .imagen img, .imagen-servicio, .imagen-producto {
+    width: 100%; /* Asegura que las imágenes y los textos ocupen todo el ancho disponible */
+  }
+}
