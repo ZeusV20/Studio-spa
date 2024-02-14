@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   let captionText = document.getElementById("caption");
   let currentIndex = 0;
 
-  // Función para abrir el modal solo en dispositivos móviles
   function shouldOpenModal() {
       return window.innerWidth <= 768;
   }
